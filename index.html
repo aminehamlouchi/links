@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Amine Hamlouchi | Links</title>
+<meta name="description" content="Dawah, lives, clips, and entertainment. Follow Amine Hamlouchi and support the dawah." />
+<meta name="theme-color" content="#0a0f0d" />
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Amine Hamlouchi" />
+<meta property="og:description" content="Dawah, lives, clips, and entertainment. Follow and support the dawah." />
+<meta property="og:image" content="https://ugc.production.linktr.ee/9f70dd2a-0f5a-4808-be88-7bd811401878_953f364aec41d5d129cbb70dac96b43b-tplv-tiktokx-cropcenter-1080-1080.jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Inline SVG favicon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230a0f0d'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Georgia,serif' fill='%2334d399' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+
+<style>
+  :root{
+    --bg:#0a0f0d;
+    --emerald:#34d399;
+    --emerald-deep:#059669;
+    --glass:rgba(255,255,255,.055);
+    --glass-hover:rgba(255,255,255,.10);
+    --border:rgba(255,255,255,.10);
+    --text:#f2f5f4;
+    --muted:#8b9a95;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--text);
+    background:var(--bg);
+    min-height:100vh;
+    line-height:1.5;
+    overflow-x:hidden;
+  }
+  /* ambient emerald glow */
+  body::before{
+    content:"";
+    position:fixed;inset:0;z-index:-1;
+    background:
+      radial-gradient(60% 50% at 50% -5%, rgba(16,185,129,.28), transparent 70%),
+      radial-gradient(45% 35% at 12% 18%, rgba(5,150,105,.16), transparent 70%),
+      radial-gradient(50% 40% at 88% 88%, rgba(52,211,153,.12), transparent 70%),
+      var(--bg);
+  }
+  .wrap{
+    max-width:480px;
+    margin:0 auto;
+    padding:56px 20px 48px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  /* header */
+  .avatar{
+    width:104px;height:104px;border-radius:50%;
+    object-fit:cover;
+    background:linear-gradient(135deg,#10241d,#0a0f0d);
+    border:2px solid rgba(52,211,153,.55);
+    box-shadow:0 0 0 6px rgba(52,211,153,.10), 0 18px 50px rgba(0,0,0,.55);
+    display:flex;align-items:center;justify-content:center;
+    font-size:42px;font-family:Georgia,serif;color:var(--emerald);
+    overflow:hidden;
+  }
+  .avatar img{width:100%;height:100%;object-fit:cover;display:block;}
+  .name{
+    margin-top:18px;
+    font-size:23px;font-weight:700;letter-spacing:-.2px;
+    display:flex;align-items:center;gap:6px;
+  }
+  .verified{width:19px;height:19px;flex:none;}
+  .bio{
+    margin-top:8px;text-align:center;color:var(--muted);
+    font-size:14.5px;max-width:330px;
+  }
+  .bio .support{display:block;margin-top:6px;color:#c7d2ce;}
+
+  /* section labels */
+  .label{
+    align-self:flex-start;
+    margin:30px 4px 12px;
+    font-size:11.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;
+    color:var(--muted);
+  }
+
+  /* links */
+  .links{width:100%;display:flex;flex-direction:column;gap:13px;}
+  .link{
+    position:relative;overflow:hidden;
+    display:flex;align-items:center;gap:14px;
+    width:100%;padding:16px 18px;
+    border-radius:16px;
+    background:var(--glass);
+    border:1px solid var(--border);
+    backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    color:var(--text);text-decoration:none;
+    font-size:15.5px;font-weight:600;
+    transition:transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease;
+  }
+  .link .ic{width:22px;height:22px;flex:none;opacity:.95;}
+  .link .txt{flex:1;}
+  .link .chev{width:16px;height:16px;flex:none;color:var(--muted);transition:transform .18s ease,color .18s ease;}
+  .link:hover{
+    transform:translateY(-2px);
+    background:var(--glass-hover);
+    border-color:rgba(52,211,153,.5);
+    box-shadow:0 10px 30px rgba(0,0,0,.45), 0 0 0 1px rgba(52,211,153,.10);
+  }
+  .link:hover .chev{transform:translateX(3px);color:var(--emerald);}
+  .link:active{transform:translateY(0) scale(.99);}
+  .link:focus-visible{outline:2px solid var(--emerald);outline-offset:3px;}
+  /* shine sweep */
+  .link::after{
+    content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;
+    background:linear-gradient(100deg,transparent,rgba(255,255,255,.10),transparent);
+    transform:skewX(-18deg);transition:left .6s ease;
+  }
+  .link:hover::after{left:160%;}
+
+  /* highlighted support buttons */
+  .link.support-link{
+    background:linear-gradient(180deg,rgba(52,211,153,.10),rgba(52,211,153,.04));
+    border-color:rgba(52,211,153,.28);
+  }
+
+  /* footer */
+  .footer{margin-top:36px;text-align:center;color:var(--muted);font-size:12.5px;line-height:1.7;}
+  .footer a{color:var(--emerald);text-decoration:none;}
+  .footer a:hover{text-decoration:underline;}
+
+  /* entrance animation */
+  @keyframes rise{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+  .anim{opacity:0;animation:rise .55s cubic-bezier(.2,.7,.3,1) forwards;}
+
+  @media (prefers-reduced-motion:reduce){
+    .anim{animation:none;opacity:1;}
+    .link::after{display:none;}
+    .link:hover{transform:none;}
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+
+    <div class="avatar anim" style="animation-delay:.02s">
+      <img src="https://ugc.production.linktr.ee/9f70dd2a-0f5a-4808-be88-7bd811401878_953f364aec41d5d129cbb70dac96b43b-tplv-tiktokx-cropcenter-1080-1080.jpeg"
+           alt="Amine Hamlouchi" referrerpolicy="no-referrer"
+           onerror="this.remove()" />
+    </div>
+
+    <h1 class="name anim" style="animation-delay:.06s">
+      Amine Hamlouchi
+      <svg class="verified" viewBox="0 0 24 24" fill="none" aria-label="verified">
+        <path d="M12 2l2.39 1.74 2.95-.02 1.05 2.76 2.4 1.72-.78 2.85.78 2.85-2.4 1.72-1.05 2.76-2.95-.02L12 22l-2.39-1.74-2.95.02-1.05-2.76-2.4-1.72.78-2.85-.78-2.85 2.4-1.72L6.66 3.72l2.95.02L12 2z" fill="#34d399"/>
+        <path d="M8.5 12.2l2.3 2.3 4.7-4.7" stroke="#0a0f0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </h1>
+
+    <p class="bio anim" style="animation-delay:.10s">
+      Dawah • Lives • Clips • Entertainment 🏴 ☝️
+      <span class="support">If you benefit, please support the dawah below 🤍</span>
+    </p>
+
+    <!-- FOLLOW -->
+    <div class="label anim" style="animation-delay:.14s">Follow</div>
+    <nav class="links">
+      <a class="link anim" style="animation-delay:.16s" href="https://www.tiktok.com/@aminehamlouchi" target="_blank" rel="noopener">
+        <img class="ic" src="https://cdn.simpleicons.org/tiktok/ffffff" alt="" />
+        <span class="txt">TikTok</span>
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </a>
+      <a class="link anim" style="animation-delay:.20s" href="https://www.youtube.com/@AmineHamlouchi?sub_confirmation=1" target="_blank" rel="noopener">
+        <img class="ic" src="https://cdn.simpleicons.org/youtube/ffffff" alt="" />
+        <span class="txt">YouTube</span>
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </a>
+      <a class="link anim" style="animation-delay:.24s" href="https://www.instagram.com/aminehamlouchi_" target="_blank" rel="noopener">
+        <img class="ic" src="https://cdn.simpleicons.org/instagram/ffffff" alt="" />
+        <span class="txt">Instagram</span>
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </a>
+      <a class="link anim" style="animation-delay:.28s" href="https://www.twitch.tv/aminehamlouchi" target="_blank" rel="noopener">
+        <img class="ic" src="https://cdn.simpleicons.org/twitch/ffffff" alt="" />
+        <span class="txt">Twitch</span>
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </a>
+    </nav>
+
+    <!-- SUPPORT -->
+    <div class="label anim" style="animation-delay:.30s">Support the Dawah 🤍</div>
+    <nav class="links">
+      <a class="link support-link anim" style="animation-delay:.32s" href="https://patreon.com/AmineHamlouchi" target="_blank" rel="noopener">
+        <img class="ic" src="https://cdn.simpleicons.org/patreon/ffffff" alt="" />
+        <span class="txt">Patreon</span>
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </a>
+      <a class="link support-link anim" style="animation-delay:.36s" href="https://paypal.me/Hamlouchi" target="_blank" rel="noopener">
+        <img class="ic" src="https://cdn.simpleicons.org/paypal/ffffff" alt="" />
+        <span class="txt">PayPal</span>
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </a>
+      <a class="link support-link anim" style="animation-delay:.40s" href="https://venmo.com/u/Amine-Hamlouchi" target="_blank" rel="noopener">
+        <img class="ic" src="https://cdn.simpleicons.org/venmo/ffffff" alt="" />
+        <span class="txt">Venmo</span>
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </a>
+      <a class="link support-link anim" style="animation-delay:.44s" href="https://cash.app/$IbnHamlouchi" target="_blank" rel="noopener">
+        <img class="ic" src="https://cdn.simpleicons.org/cashapp/ffffff" alt="" />
+        <span class="txt">Cash App</span>
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </a>
+      <a class="link support-link anim" style="animation-delay:.48s" href="https://www.amazon.com/hz/wishlist/ls/2IT53J54ZCIOJ?ref_=wl_share" target="_blank" rel="noopener">
+        <img class="ic" src="https://cdn.simpleicons.org/amazon/ffffff" alt="" />
+        <span class="txt">Amazon Wishlist</span>
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </a>
+    </nav>
+
+    <!-- STORE -->
+    <div class="label anim" style="animation-delay:.50s">Shop</div>
+    <nav class="links">
+      <a class="link anim" style="animation-delay:.52s" href="https://househamlouchi.myshopify.com" target="_blank" rel="noopener">
+        <img class="ic" src="https://cdn.simpleicons.org/shopify/ffffff" alt="" />
+        <span class="txt">Authentic Moroccan Thobes</span>
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </a>
+    </nav>
+
+    <div class="footer anim" style="animation-delay:.56s">
+      Business &amp; collabs: <a href="mailto:aminehamlouchibusiness@gmail.com">aminehamlouchibusiness@gmail.com</a><br/>
+      © <span id="yr"></span> Amine Hamlouchi
+    </div>
+
+  </main>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
