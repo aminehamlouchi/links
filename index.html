@@ -3,241 +3,334 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Amine Hamlouchi | Links</title>
-<meta name="description" content="Dawah, lives, clips, and entertainment. Follow Amine Hamlouchi and support the dawah." />
-<meta name="theme-color" content="#0a0f0d" />
+<title>Amine Hamlouchi</title>
+<meta name="description" content="Da'wah, lives, clips, and entertainment. Follow Amine Hamlouchi and support the da'wah." />
+<meta name="theme-color" content="#0a261d" />
 
-<!-- Open Graph / social sharing -->
 <meta property="og:type" content="profile" />
 <meta property="og:title" content="Amine Hamlouchi" />
-<meta property="og:description" content="Dawah, lives, clips, and entertainment. Follow and support the dawah." />
+<meta property="og:description" content="Da'wah, lives, clips, and entertainment. Follow and support the da'wah." />
 <meta property="og:image" content="https://ugc.production.linktr.ee/9f70dd2a-0f5a-4808-be88-7bd811401878_953f364aec41d5d129cbb70dac96b43b-tplv-tiktokx-cropcenter-1080-1080.jpeg" />
 <meta name="twitter:card" content="summary_large_image" />
 
-<!-- Inline SVG favicon -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230a0f0d'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Georgia,serif' fill='%2334d399' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a261d'/%3E%3Ctext x='50' y='70' font-size='60' font-family='Georgia,serif' fill='%23e8cf8a' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 
 <style>
   :root{
-    --bg:#0a0f0d;
-    --emerald:#34d399;
-    --emerald-deep:#059669;
-    --glass:rgba(255,255,255,.055);
-    --glass-hover:rgba(255,255,255,.10);
-    --border:rgba(255,255,255,.10);
-    --text:#f2f5f4;
-    --muted:#8b9a95;
+    --bg:#0a261d;--bg-top:#0d3022;
+    --card:#103a2b;--card-2:#0f3327;
+    --ink:#f4ecd9;--muted:#a6bdac;
+    --gold:#caa84e;--gold-soft:#e8cf8a;
+    --hair:rgba(232,207,138,.20);--hair-2:rgba(232,207,138,.34);
   }
+  .pg{fill:rgba(232,207,138,.05);}
   *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
   html{-webkit-text-size-adjust:100%;}
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    color:var(--text);
-    background:var(--bg);
-    min-height:100vh;
-    line-height:1.5;
-    overflow-x:hidden;
-  }
-  /* ambient emerald glow */
-  body::before{
-    content:"";
-    position:fixed;inset:0;z-index:-1;
-    background:
-      radial-gradient(60% 50% at 50% -5%, rgba(16,185,129,.28), transparent 70%),
-      radial-gradient(45% 35% at 12% 18%, rgba(5,150,105,.16), transparent 70%),
-      radial-gradient(50% 40% at 88% 88%, rgba(52,211,153,.12), transparent 70%),
-      var(--bg);
-  }
-  .wrap{
-    max-width:480px;
-    margin:0 auto;
-    padding:56px 20px 48px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-  }
+  body{font-family:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:radial-gradient(60% 42% at 50% 15%, rgba(232,207,138,.13), transparent 66%), radial-gradient(85% 32% at 50% 100%, rgba(232,207,138,.055), transparent 72%), linear-gradient(180deg,var(--bg-top),var(--bg) 400px);
+    background-attachment:fixed;color:var(--ink);min-height:100vh;line-height:1.5;-webkit-font-smoothing:antialiased;}
+  .bg-deco{position:fixed;inset:-26px;z-index:0;pointer-events:none;opacity:.06;will-change:transform;transition:transform .2s ease-out;}
+  .bg-deco .pg{stroke:var(--gold-soft);}
+  .wrap{position:relative;z-index:1;max-width:440px;margin:0 auto;padding:0 22px 48px;display:flex;flex-direction:column;align-items:center;
+    opacity:0;animation:fade .5s ease forwards;}
+  @keyframes fade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+  @media (prefers-reduced-motion:reduce){.wrap{animation:none;opacity:1;}}
 
-  /* header */
-  .avatar{
-    width:104px;height:104px;border-radius:50%;
-    object-fit:cover;
-    background:linear-gradient(135deg,#10241d,#0a0f0d);
-    border:2px solid rgba(52,211,153,.55);
-    box-shadow:0 0 0 6px rgba(52,211,153,.10), 0 18px 50px rgba(0,0,0,.55);
-    display:flex;align-items:center;justify-content:center;
-    font-size:42px;font-family:Georgia,serif;color:var(--emerald);
-    overflow:hidden;
-  }
-  .avatar img{width:100%;height:100%;object-fit:cover;display:block;}
-  .name{
-    margin-top:18px;
-    font-size:23px;font-weight:700;letter-spacing:-.2px;
-    display:flex;align-items:center;gap:6px;
-  }
-  .verified{width:19px;height:19px;flex:none;}
-  .bio{
-    margin-top:8px;text-align:center;color:var(--muted);
-    font-size:14.5px;max-width:330px;
-  }
-  .bio .support{display:block;margin-top:6px;color:#c7d2ce;}
+  /* HERO */
+  .hero{position:relative;width:100%;display:flex;flex-direction:column;align-items:center;padding:46px 0 8px;}
+  .hero-pat{position:absolute;inset:0;opacity:.20;pointer-events:none;-webkit-mask-image:radial-gradient(120% 90% at 50% 18%,#000,transparent 72%);mask-image:radial-gradient(120% 90% at 50% 18%,#000,transparent 72%);}
+  .hero-pat .pg{stroke:var(--gold-soft);}
+  .arch{position:relative;width:128px;height:152px;}
+  .arch img{width:128px;height:152px;object-fit:cover;display:block;background:#0c2e22;
+    clip-path:path('M8,152 L8,74 Q11,24 64,11 Q117,24 120,74 L120,152 Z');}
+  .arch .frame{position:absolute;inset:0;pointer-events:none;}
+  .greet{margin-top:18px;font-size:16px;color:var(--gold-soft);font-weight:500;letter-spacing:normal;}
+  .name{margin-top:5px;font-family:"Fraunces",Georgia,serif;font-size:32px;font-weight:600;letter-spacing:-.01em;color:var(--ink);}
+  .rule{display:flex;align-items:center;gap:11px;margin:15px 0 11px;color:var(--gold);}
+  .rule .ln{height:1px;width:46px;background:linear-gradient(90deg,transparent,var(--hair-2));}
+  .rule .ln.r{background:linear-gradient(90deg,var(--hair-2),transparent);}
+  .rule .st{width:11px;height:11px;}
+  .rule .st rect{fill:var(--gold);}
+  .bio{text-align:center;color:var(--muted);font-size:14.5px;max-width:320px;}
+  .bio .sec{display:block;margin-top:3px;color:var(--gold-soft);font-size:13.5px;}
+  .hijri{margin-top:10px;font-size:12px;font-weight:600;letter-spacing:.02em;color:var(--gold);opacity:.92;min-height:15px;}
+  .contact{position:relative;display:inline-flex;align-items:center;gap:8px;margin-top:15px;}
+  .contact-btn{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:11px;background:rgba(232,207,138,.10);border:1px solid var(--hair-2);color:var(--ink);text-decoration:none;font-size:13px;font-weight:600;transition:background .15s ease,transform .15s ease;}
+  .contact-btn:hover{background:rgba(232,207,138,.18);transform:translateY(-1px);}
+  .contact-btn svg{width:15px;height:15px;color:var(--gold-soft);}
+  .contact-copy{display:inline-flex;align-items:center;justify-content:center;width:37px;height:37px;border-radius:10px;background:rgba(232,207,138,.10);border:1px solid var(--hair-2);color:var(--gold-soft);cursor:pointer;transition:background .15s ease;}
+  .contact-copy:hover{background:rgba(232,207,138,.18);}
+  .contact-copy svg{width:15px;height:15px;}
+  .contact-toast{position:absolute;top:-34px;left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--gold-soft);color:#0a261d;font-size:11.5px;font-weight:700;padding:5px 10px;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease;}
+  .contact-toast.show{opacity:1;transform:translateX(-50%) translateY(-3px);}
+  .reveal{opacity:0;transform:translateY(15px);transition:opacity .6s cubic-bezier(.2,.7,.3,1),transform .6s cubic-bezier(.2,.7,.3,1);}
+  .reveal.in{opacity:1;transform:none;}
+  .thobe::before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(190px 190px at var(--gx,50%) var(--gy,50%),rgba(232,207,138,.20),transparent 60%);opacity:0;transition:opacity .25s ease;pointer-events:none;z-index:0;}
+  .thobe:hover::before{opacity:1;}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}.bg-deco{transition:none;}}
 
-  /* section labels */
-  .label{
-    align-self:flex-start;
-    margin:30px 4px 12px;
-    font-size:11.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;
-    color:var(--muted);
-  }
+  /* FEATURED */
+  .feature{width:100%;margin-top:30px;background:var(--card);border:1px solid var(--hair);border-radius:18px;overflow:hidden;box-shadow:inset 0 1px 0 rgba(232,207,138,.07), 0 10px 28px rgba(0,0,0,.30);}
+  .feature{text-align:center;}
+  .feature .media{position:relative;width:232px;max-width:78%;aspect-ratio:9/16;margin:20px auto 0;border:1px solid var(--hair-2);border-radius:16px;overflow:hidden;background:#0c2e22;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;box-shadow:0 14px 30px rgba(0,0,0,.34);}
+  .feature .media .thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .feature .media iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  .feature .tag{position:absolute;top:10px;left:10px;z-index:2;display:inline-flex;align-items:center;gap:6px;font-size:10.5px;font-weight:600;letter-spacing:.04em;color:#0a261d;background:var(--gold-soft);padding:5px 9px;border-radius:999px;}
+  .feature .play{position:relative;z-index:2;width:54px;height:54px;border-radius:50%;background:rgba(10,38,29,.55);border:1.5px solid var(--gold-soft);display:flex;align-items:center;justify-content:center;}
+  .feature .play svg{width:21px;height:21px;margin-left:3px;color:var(--gold-soft);}
+  .feature .body{padding:16px 6px 2px;}
+  .feature .eyebrow{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--gold);}
+  .feature .title{margin-top:7px;font-family:"Fraunces",Georgia,serif;font-size:19px;font-weight:600;color:var(--ink);}
+  .feature .sub{margin-top:3px;color:var(--muted);font-size:14px;}
+  .feature .cta{margin-top:13px;display:inline-flex;align-items:center;gap:7px;color:#0a261d;background:var(--gold-soft);padding:10px 16px;border-radius:11px;font-size:14px;font-weight:600;text-decoration:none;transition:background .15s ease;}
+  .feature .cta:hover{background:#f0d99a;}
+  .feature .cta svg{width:15px;height:15px;}
 
-  /* links */
-  .links{width:100%;display:flex;flex-direction:column;gap:13px;}
-  .link{
-    position:relative;overflow:hidden;
-    display:flex;align-items:center;gap:14px;
-    width:100%;padding:16px 18px;
-    border-radius:16px;
-    background:var(--glass);
-    border:1px solid var(--border);
-    backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
-    color:var(--text);text-decoration:none;
-    font-size:15.5px;font-weight:600;
-    transition:transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease;
-  }
-  .link .ic{width:22px;height:22px;flex:none;opacity:.95;}
-  .link .txt{flex:1;}
-  .link .chev{width:16px;height:16px;flex:none;color:var(--muted);transition:transform .18s ease,color .18s ease;}
-  .link:hover{
-    transform:translateY(-2px);
-    background:var(--glass-hover);
-    border-color:rgba(52,211,153,.5);
-    box-shadow:0 10px 30px rgba(0,0,0,.45), 0 0 0 1px rgba(52,211,153,.10);
-  }
-  .link:hover .chev{transform:translateX(3px);color:var(--emerald);}
-  .link:active{transform:translateY(0) scale(.99);}
-  .link:focus-visible{outline:2px solid var(--emerald);outline-offset:3px;}
-  /* shine sweep */
-  .link::after{
-    content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;
-    background:linear-gradient(100deg,transparent,rgba(255,255,255,.10),transparent);
-    transform:skewX(-18deg);transition:left .6s ease;
-  }
-  .link:hover::after{left:160%;}
+  /* latest videos */
+  .vidgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;width:100%;}
+  .vid{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:var(--ink);}
+  .vthumb{position:relative;width:100%;aspect-ratio:9/16;border-radius:12px;overflow:hidden;border:1px solid var(--hair);background:#0c2e22;box-shadow:0 8px 20px rgba(0,0,0,.28);transition:transform .15s ease,border-color .15s ease;}
+  .vthumb img{width:100%;height:100%;object-fit:cover;}
+  .vthumb .vpl{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:32px;height:32px;border-radius:50%;background:rgba(10,38,29,.55);border:1px solid var(--hair-2);display:flex;align-items:center;justify-content:center;}
+  .vthumb .vpl svg{width:13px;height:13px;color:var(--gold-soft);margin-left:2px;}
+  .vid .vtitle{font-size:11.5px;line-height:1.35;color:var(--muted);font-weight:500;}
+  .vid:hover .vthumb{transform:translateY(-2px);border-color:var(--hair-2);}
 
-  /* highlighted support buttons */
-  .link.support-link{
-    background:linear-gradient(180deg,rgba(52,211,153,.10),rgba(52,211,153,.04));
-    border-color:rgba(52,211,153,.28);
-  }
+  /* SECTION HEAD */
+  .shead{display:flex;align-items:center;gap:12px;width:100%;margin:30px 0 13px;}
+  .shead .ln{height:1px;flex:1;background:var(--hair);}
+  .shead .lbl{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);white-space:nowrap;}
+  .shead .st{width:12px;height:12px;}
+  .shead .st rect{fill:var(--gold);}
 
-  /* footer */
-  .footer{margin-top:36px;text-align:center;color:var(--muted);font-size:12.5px;line-height:1.7;}
-  .footer a{color:var(--emerald);text-decoration:none;}
+  /* SOCIAL GRID */
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;width:100%;}
+  .tile{display:flex;flex-direction:column;align-items:center;gap:9px;padding:15px 6px;background:var(--card);border:1px solid var(--hair);border-radius:15px;text-decoration:none;color:var(--ink);box-shadow:inset 0 1px 0 rgba(232,207,138,.06), 0 6px 18px rgba(0,0,0,.26);transition:transform .15s ease,border-color .15s ease,background .15s ease;}
+  .tile .chip{width:44px;height:44px;border-radius:50%;background:rgba(226,201,135,.10);border:1px solid var(--hair);display:flex;align-items:center;justify-content:center;}
+  .tile .chip img{width:23px;height:23px;}
+  .tile .lab{font-size:11.5px;font-weight:500;color:var(--muted);}
+  .tile:hover{transform:translateY(-2px);border-color:var(--hair-2);background:var(--card-2);}
+  .tile:hover .lab{color:var(--ink);}
+
+  /* GROUPED ROWS */
+  .group{width:100%;background:var(--card);border:1px solid var(--hair);border-radius:16px;overflow:hidden;box-shadow:inset 0 1px 0 rgba(232,207,138,.07), 0 10px 28px rgba(0,0,0,.30);}
+  .row{display:flex;align-items:center;gap:13px;padding:13px 15px;color:var(--ink);text-decoration:none;transition:background .15s ease;}
+  .row + .row{border-top:1px solid var(--hair);}
+  .row .chip{width:38px;height:38px;flex:none;border-radius:10px;background:rgba(226,201,135,.10);border:1px solid var(--hair);display:flex;align-items:center;justify-content:center;}
+  .row .chip img,.row .chip svg{width:20px;height:20px;}
+  .row .label{flex:1;font-size:15.5px;font-weight:500;}
+  .row .meta{color:var(--muted);font-size:13px;}
+  .row:hover{background:var(--card-2);}
+  .row:focus-visible{outline:2px solid var(--gold-soft);outline-offset:-2px;}
+
+  /* THOBE FEATURE */
+  .thobe{position:relative;overflow:hidden;display:flex;align-items:center;gap:16px;width:100%;margin-top:26px;padding:18px;border-radius:20px;text-decoration:none;color:var(--ink);
+    background:linear-gradient(135deg, rgba(232,207,138,.22), rgba(232,207,138,.05) 58%, rgba(27,94,74,.12)),var(--card);
+    border:1px solid rgba(232,207,138,.46);box-shadow:inset 0 1px 0 rgba(232,207,138,.20), 0 18px 40px -20px rgba(0,0,0,.55);transition:transform .15s ease, box-shadow .15s ease;}
+  .thobe::after{content:"";position:absolute;top:0;left:-60%;width:38%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.10),transparent);transform:skewX(-18deg);transition:left .7s ease;pointer-events:none;}
+  .thobe:hover{transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(232,207,138,.24), 0 24px 48px -20px rgba(0,0,0,.6);}
+  .thobe:hover::after{left:160%;}
+  .thobe-art{position:relative;flex:none;width:84px;height:106px;border-radius:14px;background:linear-gradient(160deg, rgba(232,207,138,.16), rgba(10,38,29,.22));border:1px solid var(--hair-2);display:flex;align-items:center;justify-content:center;}
+  .thobe-art svg{width:50px;height:auto;}
+  .thobe-txt{position:relative;display:flex;flex-direction:column;min-width:0;}
+  .thobe-eyebrow{font-size:10.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);}
+  .thobe-title{margin-top:5px;font-family:"Fraunces",Georgia,serif;font-size:19px;font-weight:600;color:var(--ink);line-height:1.16;}
+  .thobe-sub{margin-top:5px;font-size:12.5px;color:var(--muted);line-height:1.45;}
+  .thobe-cta{margin-top:12px;align-self:flex-start;display:inline-flex;align-items:center;gap:7px;color:#0a261d;background:var(--gold-soft);padding:9px 16px;border-radius:11px;font-size:13px;font-weight:700;}
+  .thobe-cta svg{width:14px;height:14px;}
+
+  /* FOOTER */
+  .forn{display:flex;align-items:center;justify-content:center;gap:11px;width:100%;margin:34px 0 13px;color:var(--gold);}
+  .forn .ln{height:1px;width:54px;background:linear-gradient(90deg,transparent,var(--hair-2));}
+  .forn .ln.r{background:linear-gradient(90deg,var(--hair-2),transparent);}
+  .forn .st{width:13px;height:13px;}
+  .forn .st rect{fill:var(--gold);}
+  .footer{text-align:center;color:var(--muted);font-size:12.5px;line-height:1.8;}
+  .footer a{color:var(--gold-soft);text-decoration:none;}
   .footer a:hover{text-decoration:underline;}
-
-  /* entrance animation */
-  @keyframes rise{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
-  .anim{opacity:0;animation:rise .55s cubic-bezier(.2,.7,.3,1) forwards;}
-
-  @media (prefers-reduced-motion:reduce){
-    .anim{animation:none;opacity:1;}
-    .link::after{display:none;}
-    .link:hover{transform:none;}
-  }
 </style>
 </head>
 <body>
+  <div class="bg-deco" aria-hidden="true">
+    <svg width="100%" height="100%">
+      <defs>
+        <pattern id="hpbg" width="64" height="64" patternUnits="userSpaceOnUse">
+          <g class="pg" stroke-width=".8">
+            <rect x="16" y="16" width="32" height="32"/><rect x="16" y="16" width="32" height="32" transform="rotate(45 32 32)"/>
+            <rect x="-16" y="-16" width="32" height="32"/><rect x="-16" y="-16" width="32" height="32" transform="rotate(45 0 0)"/>
+            <rect x="48" y="-16" width="32" height="32"/><rect x="48" y="-16" width="32" height="32" transform="rotate(45 64 0)"/>
+            <rect x="-16" y="48" width="32" height="32"/><rect x="-16" y="48" width="32" height="32" transform="rotate(45 0 64)"/>
+            <rect x="48" y="48" width="32" height="32"/><rect x="48" y="48" width="32" height="32" transform="rotate(45 64 64)"/>
+          </g>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#hpbg)"/>
+    </svg>
+  </div>
   <main class="wrap">
 
-    <div class="avatar anim" style="animation-delay:.02s">
-      <img src="https://ugc.production.linktr.ee/9f70dd2a-0f5a-4808-be88-7bd811401878_953f364aec41d5d129cbb70dac96b43b-tplv-tiktokx-cropcenter-1080-1080.jpeg"
-           alt="Amine Hamlouchi" referrerpolicy="no-referrer"
-           onerror="this.remove()" />
-    </div>
-
-    <h1 class="name anim" style="animation-delay:.06s">
-      Amine Hamlouchi
-      <svg class="verified" viewBox="0 0 24 24" fill="none" aria-label="verified">
-        <path d="M12 2l2.39 1.74 2.95-.02 1.05 2.76 2.4 1.72-.78 2.85.78 2.85-2.4 1.72-1.05 2.76-2.95-.02L12 22l-2.39-1.74-2.95.02-1.05-2.76-2.4-1.72.78-2.85-.78-2.85 2.4-1.72L6.66 3.72l2.95.02L12 2z" fill="#34d399"/>
-        <path d="M8.5 12.2l2.3 2.3 4.7-4.7" stroke="#0a0f0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- HERO -->
+    <header class="hero">
+      <svg class="hero-pat" width="100%" height="100%" aria-hidden="true">
+        <defs>
+          <pattern id="hp" width="64" height="64" patternUnits="userSpaceOnUse">
+            <g class="pg" stroke-width=".8">
+              <rect x="16" y="16" width="32" height="32"/><rect x="16" y="16" width="32" height="32" transform="rotate(45 32 32)"/>
+              <rect x="-16" y="-16" width="32" height="32"/><rect x="-16" y="-16" width="32" height="32" transform="rotate(45 0 0)"/>
+              <rect x="48" y="-16" width="32" height="32"/><rect x="48" y="-16" width="32" height="32" transform="rotate(45 64 0)"/>
+              <rect x="-16" y="48" width="32" height="32"/><rect x="-16" y="48" width="32" height="32" transform="rotate(45 0 64)"/>
+              <rect x="48" y="48" width="32" height="32"/><rect x="48" y="48" width="32" height="32" transform="rotate(45 64 64)"/>
+            </g>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#hp)"/>
       </svg>
-    </h1>
 
-    <p class="bio anim" style="animation-delay:.10s">
-      Dawah • Lives • Clips • Entertainment 🏴 ☝️
-      <span class="support">If you benefit, please support the dawah below 🤍</span>
-    </p>
+      <div class="arch">
+        <img src="https://ugc.production.linktr.ee/9f70dd2a-0f5a-4808-be88-7bd811401878_953f364aec41d5d129cbb70dac96b43b-tplv-tiktokx-cropcenter-1080-1080.jpeg" alt="Amine Hamlouchi" referrerpolicy="no-referrer" onerror="this.style.display='none'" />
+        <svg class="frame" viewBox="0 0 128 152" width="128" height="152" aria-hidden="true">
+          <defs><linearGradient id="goldgrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#b8923f"/><stop offset=".5" stop-color="#f1dca0"/><stop offset="1" stop-color="#b8923f"/>
+          </linearGradient></defs>
+          <path d="M64,2 l5,6 -5,6 -5,-6 z" fill="url(#goldgrad)"/>
+          <path d="M8,152 L8,74 Q11,24 64,11 Q117,24 120,74 L120,152 Z" fill="none" stroke="url(#goldgrad)" stroke-width="2.4"/>
+        </svg>
+      </div>
+
+      <div class="greet" dir="rtl" lang="ar">السلام عليكم</div>
+      <h1 class="name">Amine Hamlouchi</h1>
+      <div class="rule"><span class="ln"></span><svg class="st" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14"/><rect x="5" y="5" width="14" height="14" transform="rotate(45 12 12)"/></svg><span class="ln r"></span></div>
+      <p class="bio">Da'wah · Lives · Clips · Entertainment<span class="sec">If you benefit, support the da'wah below.</span></p>
+      <div class="hijri" id="hijri" aria-label="Today's Hijri date"></div>
+      <div class="contact">
+        <a class="contact-btn" href="mailto:aminehamlouchibusiness@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Business &amp; collabs</a>
+        <button class="contact-copy" type="button" data-email="aminehamlouchibusiness@gmail.com" aria-label="Copy business email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>
+        <span class="contact-toast" role="status">Email copied</span>
+      </div>
+    </header>
+
+    <!-- THOBE FEATURE -->
+    <a class="thobe" href="https://househamlouchi.myshopify.com" target="_blank" rel="noopener" aria-label="Shop authentic Moroccan thobes">
+      <span class="thobe-art">
+        <svg viewBox="0 0 64 110" fill="none" aria-hidden="true">
+          <g stroke="#e8cf8a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" fill="rgba(232,207,138,.08)">
+            <path d="M32 7 C27 7 23 9 21 12 L7 20 L12 34 L20 29 L20 98 Q32 104 44 98 L44 29 L52 34 L57 20 L43 12 C41 9 37 7 32 7 Z"/>
+          </g>
+          <path d="M32 13 L32 92" stroke="#e8cf8a" stroke-width="1.3" fill="none"/>
+          <path d="M27 12 Q32 17 37 12" stroke="#e8cf8a" stroke-width="1.3" fill="none"/>
+        </svg>
+      </span>
+      <span class="thobe-txt">
+        <span class="thobe-eyebrow">Featured · Shop</span>
+        <span class="thobe-title">Authentic Moroccan Thobes</span>
+        <span class="thobe-sub">Handcrafted by House Hamlouchi. Premium, modest, timeless.</span>
+        <span class="thobe-cta">Shop the collection<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </span>
+    </a>
+
+    <!-- FEATURED -->
+    <section class="feature" aria-label="Featured video">
+      <button class="media ytplay" type="button" data-yt="ejKHg8GwnZY" aria-label="Play the latest video">
+        <span class="tag">Latest on YouTube</span>
+        <img class="thumb" src="https://i.ytimg.com/vi/ejKHg8GwnZY/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" />
+        <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+      </button>
+      <div class="body">
+        <div class="eyebrow">This week</div>
+        <div class="title">Ex-Muslims who dream of Jesus</div>
+        <div class="sub">New on YouTube. Tap to play.</div>
+        <a class="cta" href="https://www.youtube.com/shorts/ejKHg8GwnZY" target="_blank" rel="noopener">Watch on YouTube<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </section>
+
+    <!-- LATEST VIDEOS -->
+    <div class="shead"><span class="lbl"><svg class="st" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14"/><rect x="5" y="5" width="14" height="14" transform="rotate(45 12 12)"/></svg> Latest videos</span><span class="ln"></span></div>
+    <div class="vidgrid">
+      <a class="vid" href="https://www.youtube.com/shorts/yIbAfp9RKrQ" target="_blank" rel="noopener"><span class="vthumb"><img src="https://i.ytimg.com/vi/yIbAfp9RKrQ/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" /><span class="vpl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vtitle">The Quran, unchanged through time</span></a>
+      <a class="vid" href="https://www.youtube.com/shorts/KQPaFj7XSuU" target="_blank" rel="noopener"><span class="vthumb"><img src="https://i.ytimg.com/vi/KQPaFj7XSuU/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" /><span class="vpl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vtitle">Surprising links between the Bible and Islam</span></a>
+      <a class="vid" href="https://www.youtube.com/shorts/I02u3h7DI0I" target="_blank" rel="noopener"><span class="vthumb"><img src="https://i.ytimg.com/vi/I02u3h7DI0I/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" /><span class="vpl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vtitle">The free-will paradox, explained</span></a>
+    </div>
 
     <!-- FOLLOW -->
-    <div class="label anim" style="animation-delay:.14s">Follow</div>
-    <nav class="links">
-      <a class="link anim" style="animation-delay:.16s" href="https://www.tiktok.com/@aminehamlouchi" target="_blank" rel="noopener">
-        <img class="ic" src="https://cdn.simpleicons.org/tiktok/ffffff" alt="" />
-        <span class="txt">TikTok</span>
-        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-      <a class="link anim" style="animation-delay:.20s" href="https://www.youtube.com/@AmineHamlouchi?sub_confirmation=1" target="_blank" rel="noopener">
-        <img class="ic" src="https://cdn.simpleicons.org/youtube/ffffff" alt="" />
-        <span class="txt">YouTube</span>
-        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-      <a class="link anim" style="animation-delay:.24s" href="https://www.instagram.com/aminehamlouchi_" target="_blank" rel="noopener">
-        <img class="ic" src="https://cdn.simpleicons.org/instagram/ffffff" alt="" />
-        <span class="txt">Instagram</span>
-        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-      <a class="link anim" style="animation-delay:.28s" href="https://www.twitch.tv/aminehamlouchi" target="_blank" rel="noopener">
-        <img class="ic" src="https://cdn.simpleicons.org/twitch/ffffff" alt="" />
-        <span class="txt">Twitch</span>
-        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-    </nav>
-
-    <!-- SUPPORT -->
-    <div class="label anim" style="animation-delay:.30s">Support the Dawah 🤍</div>
-    <nav class="links">
-      <a class="link support-link anim" style="animation-delay:.32s" href="https://patreon.com/AmineHamlouchi" target="_blank" rel="noopener">
-        <img class="ic" src="https://cdn.simpleicons.org/patreon/ffffff" alt="" />
-        <span class="txt">Patreon</span>
-        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-      <a class="link support-link anim" style="animation-delay:.36s" href="https://paypal.me/Hamlouchi" target="_blank" rel="noopener">
-        <img class="ic" src="https://cdn.simpleicons.org/paypal/ffffff" alt="" />
-        <span class="txt">PayPal</span>
-        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-      <a class="link support-link anim" style="animation-delay:.40s" href="https://venmo.com/u/Amine-Hamlouchi" target="_blank" rel="noopener">
-        <img class="ic" src="https://cdn.simpleicons.org/venmo/ffffff" alt="" />
-        <span class="txt">Venmo</span>
-        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-      <a class="link support-link anim" style="animation-delay:.44s" href="https://cash.app/$IbnHamlouchi" target="_blank" rel="noopener">
-        <img class="ic" src="https://cdn.simpleicons.org/cashapp/ffffff" alt="" />
-        <span class="txt">Cash App</span>
-        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-      <a class="link support-link anim" style="animation-delay:.48s" href="https://www.amazon.com/hz/wishlist/ls/2IT53J54ZCIOJ?ref_=wl_share" target="_blank" rel="noopener">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
-        <span class="txt">Amazon Wishlist</span>
-        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-    </nav>
-
-    <!-- STORE -->
-    <div class="label anim" style="animation-delay:.50s">Shop</div>
-    <nav class="links">
-      <a class="link anim" style="animation-delay:.52s" href="https://househamlouchi.myshopify.com" target="_blank" rel="noopener">
-        <img class="ic" src="https://cdn.simpleicons.org/shopify/ffffff" alt="" />
-        <span class="txt">Authentic Moroccan Thobes</span>
-        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-    </nav>
-
-    <div class="footer anim" style="animation-delay:.56s">
-      Business &amp; collabs: <a href="mailto:aminehamlouchibusiness@gmail.com">aminehamlouchibusiness@gmail.com</a><br/>
-      © <span id="yr"></span> Amine Hamlouchi
+    <div class="shead"><span class="lbl"><svg class="st" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14"/><rect x="5" y="5" width="14" height="14" transform="rotate(45 12 12)"/></svg> Follow</span><span class="ln"></span></div>
+    <div class="grid">
+      <a class="tile" href="https://www.tiktok.com/@aminehamlouchi" target="_blank" rel="noopener"><span class="chip"><img src="https://cdn.simpleicons.org/tiktok/e8cf8a" alt="" /></span><span class="lab">TikTok</span></a>
+      <a class="tile" href="https://www.youtube.com/@AmineHamlouchi?sub_confirmation=1" target="_blank" rel="noopener"><span class="chip"><img src="https://cdn.simpleicons.org/youtube/e8cf8a" alt="" /></span><span class="lab">YouTube</span></a>
+      <a class="tile" href="https://www.instagram.com/aminehamlouchi_" target="_blank" rel="noopener"><span class="chip"><img src="https://cdn.simpleicons.org/instagram/e8cf8a" alt="" /></span><span class="lab">Instagram</span></a>
+      <a class="tile" href="https://www.twitch.tv/aminehamlouchi" target="_blank" rel="noopener"><span class="chip"><img src="https://cdn.simpleicons.org/twitch/e8cf8a" alt="" /></span><span class="lab">Twitch</span></a>
     </div>
 
+    <!-- SUPPORT -->
+    <div class="shead"><span class="lbl"><svg class="st" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14"/><rect x="5" y="5" width="14" height="14" transform="rotate(45 12 12)"/></svg> Support the da'wah</span><span class="ln"></span></div>
+    <nav class="group">
+      <a class="row" href="https://patreon.com/AmineHamlouchi" target="_blank" rel="noopener"><span class="chip"><img src="https://cdn.simpleicons.org/patreon/e8cf8a" alt="" /></span><span class="label">Patreon</span></a>
+      <a class="row" href="https://paypal.me/Hamlouchi" target="_blank" rel="noopener"><span class="chip"><img src="https://cdn.simpleicons.org/paypal/e8cf8a" alt="" /></span><span class="label">PayPal</span></a>
+      <a class="row" href="https://venmo.com/u/Amine-Hamlouchi" target="_blank" rel="noopener"><span class="chip"><img src="https://cdn.simpleicons.org/venmo/e8cf8a" alt="" /></span><span class="label">Venmo</span></a>
+      <a class="row" href="https://cash.app/$IbnHamlouchi" target="_blank" rel="noopener"><span class="chip"><img src="https://cdn.simpleicons.org/cashapp/e8cf8a" alt="" /></span><span class="label">Cash App</span></a>
+      <a class="row" href="https://www.amazon.com/hz/wishlist/ls/2IT53J54ZCIOJ?ref_=wl_share" target="_blank" rel="noopener"><span class="chip"><svg viewBox="0 0 24 24" fill="#e8cf8a" aria-hidden="true"><path d="M20 7h-2.18A3 3 0 0 0 12 4.2 3 3 0 0 0 6.18 7H4a1 1 0 0 0-1 1v3h9V7h2v4h9V8a1 1 0 0 0-1-1zM9 7a1 1 0 1 1 0-2c.7 0 1.2.6 2 2H9zm6 0h-2c.8-1.4 1.3-2 2-2a1 1 0 1 1 0 2z"/><path d="M4 13v6a1 1 0 0 0 1 1h6v-7H4zm9 7h6a1 1 0 0 0 1-1v-6h-7v7z"/></svg></span><span class="label">Amazon Wishlist</span></a>
+    </nav>
+
+    <div class="forn"><span class="ln"></span><svg class="st" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14"/><rect x="5" y="5" width="14" height="14" transform="rotate(45 12 12)"/></svg><span class="ln r"></span></div>
+    <div class="footer"><a href="mailto:aminehamlouchibusiness@gmail.com">aminehamlouchibusiness@gmail.com</a><br/>© <span id="yr"></span> Amine Hamlouchi</div>
+
   </main>
-  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+  <script>
+    (function(){
+      document.getElementById('yr').textContent=new Date().getFullYear();
+      var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* live Hijri date */
+      try{
+        var hd=new Intl.DateTimeFormat('en-US-u-ca-islamic-umalqura',{day:'numeric',month:'long',year:'numeric'}).format(new Date());
+        var he=document.getElementById('hijri');
+        if(he){he.textContent=hd.replace(/\s*AH\s*$/,'')+' AH';}
+      }catch(e){}
+
+      /* tap-to-play featured video */
+      document.querySelectorAll('.ytplay').forEach(function(b){
+        b.addEventListener('click',function(){
+          var id=b.getAttribute('data-yt');
+          var f=document.createElement('iframe');
+          f.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&playsinline=1&rel=0';
+          f.title='Featured video';
+          f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
+          f.setAttribute('allowfullscreen','');
+          b.innerHTML='';b.appendChild(f);b.style.cursor='default';
+        });
+      });
+
+      /* click-to-copy business email */
+      var cc=document.querySelector('.contact-copy');
+      if(cc){cc.addEventListener('click',function(){
+        var em=cc.getAttribute('data-email');
+        if(navigator.clipboard){navigator.clipboard.writeText(em).catch(function(){});}
+        var t=document.querySelector('.contact-toast');
+        if(t){t.classList.add('show');setTimeout(function(){t.classList.remove('show');},1600);}
+      });}
+
+      /* scroll reveal for below-the-fold blocks */
+      var rev=document.querySelectorAll('.shead,.vidgrid,.grid,.group,.forn,.footer');
+      if(reduce){rev.forEach(function(e){e.classList.add('in');});}
+      else if('IntersectionObserver' in window){
+        var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.1,rootMargin:'0px 0px -6% 0px'});
+        rev.forEach(function(e){
+          if(e.getBoundingClientRect().top>window.innerHeight*0.86){e.classList.add('reveal');io.observe(e);}
+        });
+      }
+
+      if(!reduce){
+        /* cursor-follow glow on the thobe card */
+        var th=document.querySelector('.thobe');
+        if(th){th.addEventListener('pointermove',function(e){var r=th.getBoundingClientRect();th.style.setProperty('--gx',(e.clientX-r.left)+'px');th.style.setProperty('--gy',(e.clientY-r.top)+'px');});}
+        /* subtle background parallax */
+        var bg=document.querySelector('.bg-deco');
+        if(bg){window.addEventListener('pointermove',function(e){var x=(e.clientX/window.innerWidth-.5),y=(e.clientY/window.innerHeight-.5);bg.style.transform='translate('+(x*-12).toFixed(1)+'px,'+(y*-12).toFixed(1)+'px)';},{passive:true});}
+      }
+    })();
+  </script>
 </body>
 </html>
