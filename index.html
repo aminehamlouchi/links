@@ -58,19 +58,12 @@
   .bio{text-align:center;color:var(--muted);font-size:14.5px;max-width:320px;}
   .bio .sec{display:block;margin-top:3px;color:var(--gold-soft);font-size:13.5px;}
   .hijri{margin-top:10px;font-size:12px;font-weight:600;letter-spacing:.02em;color:var(--gold);opacity:.92;min-height:15px;}
-  .contact{position:relative;display:inline-flex;align-items:center;gap:8px;margin-top:15px;}
-  .contact-btn{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:11px;background:rgba(232,207,138,.10);border:1px solid var(--hair-2);color:var(--ink);text-decoration:none;font-size:13px;font-weight:600;transition:background .15s ease,transform .15s ease;}
-  .contact-btn:hover{background:rgba(232,207,138,.18);transform:translateY(-1px);}
-  .contact-btn svg{width:15px;height:15px;color:var(--gold-soft);}
-  .contact-copy{display:inline-flex;align-items:center;justify-content:center;width:37px;height:37px;border-radius:10px;background:rgba(232,207,138,.10);border:1px solid var(--hair-2);color:var(--gold-soft);cursor:pointer;transition:background .15s ease;}
-  .contact-copy:hover{background:rgba(232,207,138,.18);}
-  .contact-copy svg{width:15px;height:15px;}
-  .contact-toast{position:absolute;top:-34px;left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--gold-soft);color:#0a261d;font-size:11.5px;font-weight:700;padding:5px 10px;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease;}
-  .contact-toast.show{opacity:1;transform:translateX(-50%) translateY(-3px);}
+  .contact{display:flex;flex-direction:column;align-items:center;gap:3px;margin-top:16px;}
+  .contact-label{font-size:10.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);}
+  .contact-email{color:var(--ink);font-size:14.5px;font-weight:600;text-decoration:none;border-bottom:1px solid var(--hair-2);padding-bottom:1px;transition:color .15s ease,border-color .15s ease;word-break:break-all;text-align:center;}
+  .contact-email:hover{color:var(--gold-soft);border-color:var(--gold-soft);}
   .reveal{opacity:0;transform:translateY(15px);transition:opacity .6s cubic-bezier(.2,.7,.3,1),transform .6s cubic-bezier(.2,.7,.3,1);}
   .reveal.in{opacity:1;transform:none;}
-  .thobe::before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(190px 190px at var(--gx,50%) var(--gy,50%),rgba(232,207,138,.20),transparent 60%);opacity:0;transition:opacity .25s ease;pointer-events:none;z-index:0;}
-  .thobe:hover::before{opacity:1;}
   @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}.bg-deco{transition:none;}}
 
   /* FEATURED */
@@ -128,20 +121,20 @@
   .row:focus-visible{outline:2px solid var(--gold-soft);outline-offset:-2px;}
 
   /* THOBE FEATURE */
-  .thobe{position:relative;overflow:hidden;display:flex;align-items:center;gap:16px;width:100%;margin-top:26px;padding:18px;border-radius:20px;text-decoration:none;color:var(--ink);
-    background:linear-gradient(135deg, rgba(232,207,138,.22), rgba(232,207,138,.05) 58%, rgba(27,94,74,.12)),var(--card);
+  .thobe{position:relative;overflow:hidden;display:flex;flex-direction:column;width:100%;margin-top:26px;border-radius:20px;text-decoration:none;color:var(--ink);
+    background:linear-gradient(135deg, rgba(232,207,138,.14), rgba(27,94,74,.10)),var(--card);
     border:1px solid rgba(232,207,138,.46);box-shadow:inset 0 1px 0 rgba(232,207,138,.20), 0 18px 40px -20px rgba(0,0,0,.55);transition:transform .15s ease, box-shadow .15s ease;}
-  .thobe::after{content:"";position:absolute;top:0;left:-60%;width:38%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.10),transparent);transform:skewX(-18deg);transition:left .7s ease;pointer-events:none;}
   .thobe:hover{transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(232,207,138,.24), 0 24px 48px -20px rgba(0,0,0,.6);}
-  .thobe:hover::after{left:160%;}
-  .thobe-art{position:relative;flex:none;width:84px;height:106px;border-radius:14px;background:linear-gradient(160deg, rgba(232,207,138,.16), rgba(10,38,29,.22));border:1px solid var(--hair-2);display:flex;align-items:center;justify-content:center;}
-  .thobe-art svg{width:50px;height:auto;}
-  .thobe-txt{position:relative;display:flex;flex-direction:column;min-width:0;}
-  .thobe-eyebrow{font-size:10.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);}
-  .thobe-title{margin-top:5px;font-family:"Fraunces",Georgia,serif;font-size:19px;font-weight:600;color:var(--ink);line-height:1.16;}
+  .thobe-banner{position:relative;width:100%;aspect-ratio:1200/628;overflow:hidden;background:#0c2e22;border-bottom:1px solid var(--hair-2);}
+  .thobe-banner img{width:100%;height:100%;object-fit:cover;display:block;}
+  .thobe-tag{position:absolute;top:12px;left:12px;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#0a261d;background:var(--gold-soft);padding:5px 10px;border-radius:999px;box-shadow:0 3px 10px rgba(0,0,0,.28);}
+  .thobe-txt{display:flex;flex-direction:column;padding:16px 18px 18px;}
+  .thobe-title{font-family:"Fraunces",Georgia,serif;font-size:20px;font-weight:600;color:var(--ink);line-height:1.16;}
   .thobe-sub{margin-top:5px;font-size:12.5px;color:var(--muted);line-height:1.45;}
-  .thobe-cta{margin-top:12px;align-self:flex-start;display:inline-flex;align-items:center;gap:7px;color:#0a261d;background:var(--gold-soft);padding:9px 16px;border-radius:11px;font-size:13px;font-weight:700;}
+  .thobe-cta{margin-top:13px;align-self:flex-start;display:inline-flex;align-items:center;gap:7px;color:#0a261d;background:var(--gold-soft);padding:9px 16px;border-radius:11px;font-size:13px;font-weight:700;}
   .thobe-cta svg{width:14px;height:14px;}
+  .tt-wrap{width:100%;display:flex;justify-content:center;}
+  .tt-wrap .tiktok-embed{width:100%!important;max-width:100%!important;margin:0!important;border-radius:14px;overflow:hidden;}
 
   /* FOOTER */
   .forn{display:flex;align-items:center;justify-content:center;gap:11px;width:100%;margin:34px 0 13px;color:var(--gold);}
@@ -207,53 +200,32 @@
       <p class="bio">Da'wah · Lives · Clips · Entertainment<span class="sec">If you benefit, support the da'wah below.</span></p>
       <div class="hijri" id="hijri" aria-label="Today's Hijri date"></div>
       <div class="contact">
-        <a class="contact-btn" href="mailto:aminehamlouchibusiness@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Business &amp; collabs</a>
-        <button class="contact-copy" type="button" data-email="aminehamlouchibusiness@gmail.com" aria-label="Copy business email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>
-        <span class="contact-toast" role="status">Email copied</span>
+        <span class="contact-label">Business &amp; collabs</span>
+        <a class="contact-email" href="mailto:aminehamlouchibusiness@gmail.com">aminehamlouchibusiness@gmail.com</a>
       </div>
     </header>
 
     <!-- THOBE FEATURE -->
     <a class="thobe" href="https://househamlouchi.myshopify.com" target="_blank" rel="noopener" aria-label="Shop authentic Moroccan thobes">
-      <span class="thobe-art">
-        <svg viewBox="0 0 64 110" fill="none" aria-hidden="true">
-          <g stroke="#e8cf8a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" fill="rgba(232,207,138,.08)">
-            <path d="M32 7 C27 7 23 9 21 12 L7 20 L12 34 L20 29 L20 98 Q32 104 44 98 L44 29 L52 34 L57 20 L43 12 C41 9 37 7 32 7 Z"/>
-          </g>
-          <path d="M32 13 L32 92" stroke="#e8cf8a" stroke-width="1.3" fill="none"/>
-          <path d="M27 12 Q32 17 37 12" stroke="#e8cf8a" stroke-width="1.3" fill="none"/>
-        </svg>
+      <span class="thobe-banner">
+        <span class="thobe-tag">Featured · Shop</span>
+        <img src="https://househamlouchi.myshopify.com/cdn/shop/files/Social_Share_Image_House_Hamlouchi.png?v=1782788516" alt="House Hamlouchi authentic Moroccan thobes" loading="lazy" referrerpolicy="no-referrer" />
       </span>
       <span class="thobe-txt">
-        <span class="thobe-eyebrow">Featured · Shop</span>
         <span class="thobe-title">Authentic Moroccan Thobes</span>
-        <span class="thobe-sub">Handcrafted by House Hamlouchi. Premium, modest, timeless.</span>
+        <span class="thobe-sub">Handcrafted and sourced through family in Morocco. Free worldwide shipping.</span>
         <span class="thobe-cta">Shop the collection<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </span>
     </a>
 
-    <!-- FEATURED -->
-    <section class="feature" aria-label="Featured video">
-      <button class="media ytplay" type="button" data-yt="ejKHg8GwnZY" aria-label="Play the latest video">
-        <span class="tag">Latest on YouTube</span>
-        <img class="thumb" src="https://i.ytimg.com/vi/ejKHg8GwnZY/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" />
-        <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-      </button>
-      <div class="body">
-        <div class="eyebrow">This week</div>
-        <div class="title">Ex-Muslims who dream of Jesus</div>
-        <div class="sub">New on YouTube. Tap to play.</div>
-        <a class="cta" href="https://www.youtube.com/shorts/ejKHg8GwnZY" target="_blank" rel="noopener">Watch on YouTube<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-    </section>
-
-    <!-- LATEST VIDEOS -->
-    <div class="shead"><span class="lbl"><svg class="st" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14"/><rect x="5" y="5" width="14" height="14" transform="rotate(45 12 12)"/></svg> Latest videos</span><span class="ln"></span></div>
-    <div class="vidgrid">
-      <a class="vid" href="https://www.youtube.com/shorts/yIbAfp9RKrQ" target="_blank" rel="noopener"><span class="vthumb"><img src="https://i.ytimg.com/vi/yIbAfp9RKrQ/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" /><span class="vpl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vtitle">The Quran, unchanged through time</span></a>
-      <a class="vid" href="https://www.youtube.com/shorts/KQPaFj7XSuU" target="_blank" rel="noopener"><span class="vthumb"><img src="https://i.ytimg.com/vi/KQPaFj7XSuU/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" /><span class="vpl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vtitle">Surprising links between the Bible and Islam</span></a>
-      <a class="vid" href="https://www.youtube.com/shorts/I02u3h7DI0I" target="_blank" rel="noopener"><span class="vthumb"><img src="https://i.ytimg.com/vi/I02u3h7DI0I/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" /><span class="vpl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span><span class="vtitle">The free-will paradox, explained</span></a>
+    <!-- LATEST ON TIKTOK (live, auto-updating) -->
+    <div class="shead"><span class="lbl"><svg class="st" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14"/><rect x="5" y="5" width="14" height="14" transform="rotate(45 12 12)"/></svg> Latest on TikTok</span><span class="ln"></span></div>
+    <div class="tt-wrap">
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@aminehamlouchi" data-unique-id="aminehamlouchi" data-embed-type="creator" style="max-width:780px;min-width:288px;">
+        <section><a target="_blank" rel="noopener" href="https://www.tiktok.com/@aminehamlouchi">@aminehamlouchi</a></section>
+      </blockquote>
     </div>
+    <script async src="https://www.tiktok.com/embed.js"></script>
 
     <!-- FOLLOW -->
     <div class="shead"><span class="lbl"><svg class="st" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14"/><rect x="5" y="5" width="14" height="14" transform="rotate(45 12 12)"/></svg> Follow</span><span class="ln"></span></div>
@@ -290,28 +262,6 @@
         if(he){he.textContent=hd.replace(/\s*AH\s*$/,'')+' AH';}
       }catch(e){}
 
-      /* tap-to-play featured video */
-      document.querySelectorAll('.ytplay').forEach(function(b){
-        b.addEventListener('click',function(){
-          var id=b.getAttribute('data-yt');
-          var f=document.createElement('iframe');
-          f.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&playsinline=1&rel=0';
-          f.title='Featured video';
-          f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
-          f.setAttribute('allowfullscreen','');
-          b.innerHTML='';b.appendChild(f);b.style.cursor='default';
-        });
-      });
-
-      /* click-to-copy business email */
-      var cc=document.querySelector('.contact-copy');
-      if(cc){cc.addEventListener('click',function(){
-        var em=cc.getAttribute('data-email');
-        if(navigator.clipboard){navigator.clipboard.writeText(em).catch(function(){});}
-        var t=document.querySelector('.contact-toast');
-        if(t){t.classList.add('show');setTimeout(function(){t.classList.remove('show');},1600);}
-      });}
-
       /* scroll reveal for below-the-fold blocks */
       var rev=document.querySelectorAll('.shead,.vidgrid,.grid,.group,.forn,.footer');
       if(reduce){rev.forEach(function(e){e.classList.add('in');});}
@@ -323,9 +273,6 @@
       }
 
       if(!reduce){
-        /* cursor-follow glow on the thobe card */
-        var th=document.querySelector('.thobe');
-        if(th){th.addEventListener('pointermove',function(e){var r=th.getBoundingClientRect();th.style.setProperty('--gx',(e.clientX-r.left)+'px');th.style.setProperty('--gy',(e.clientY-r.top)+'px');});}
         /* subtle background parallax */
         var bg=document.querySelector('.bg-deco');
         if(bg){window.addEventListener('pointermove',function(e){var x=(e.clientX/window.innerWidth-.5),y=(e.clientY/window.innerHeight-.5);bg.style.transform='translate('+(x*-12).toFixed(1)+'px,'+(y*-12).toFixed(1)+'px)';},{passive:true});}
